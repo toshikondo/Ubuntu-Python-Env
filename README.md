@@ -1,5 +1,7 @@
 # Ubuntu-Python-Env
-## How to use 
+
+## This is Docker container for Python environment based on Ubuntu 20.04
+### How to use 
 1. git clone https://github.com/toshikondo/Ubuntu-Python-Env.git
 2. cd ~/Ubuntu-Python-Env/docker
 3. $docker build . -t \<image name\>
