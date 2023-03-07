@@ -10,4 +10,6 @@
    ssh root@\<ip address of docker host\> -p 50022  
    password: mypassword
 
-\* PermanetData directory on host is mounted /root/PemanentData on container.  
+- All files in PermanetData directory is untracked.
+- PermanetData directory on host is mounted /root/PemanentData on container. 
+- If you want to add a python package you need to add the package's name on requirements.txt 
