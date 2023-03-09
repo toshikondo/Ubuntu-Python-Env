@@ -27,7 +27,9 @@ RUN wget --no-check-certificate https://www.python.org/ftp/python/3.9.16/Python-
 && cd Python-3.9.16 \
 && ./configure --enable-optimizations\
 && make \
-&& make install
+&& make install \
+&& cd .. \
+&& rm -f Python-3.9.16.tgz
 COPY requirements.txt /root
 RUN python3.9 -m pip install -r requirements.txt
 RUN echo 'alias python=python3.9' >> ~/.bashrc
